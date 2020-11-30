@@ -1,5 +1,5 @@
-var exec = require('cordova/exec');
+var cordova = require('cordova');
 
 exports.signin = function(arg0, success, error) {
-  exec(success, error, "SignInWithApple", "signin", [arg0]);
+  cordova.exec(success, error, "SignInWithApple", "signin", [arg0]);
 };
